@@ -1,0 +1,107 @@
+/*
+ * chStickyNotes.scss -> chStickyNotes.css
+ *
+ * @author			Cezary Kubel <ckubel@crimsonhexagon.com>
+ * @description		Custom Styles for chStickyNotes
+ *
+ * Copyright 2014 Crimson Hexagon Incorporated. All Rights Reserved.
+ * 
+ */
+
+// Imports //
+@import "../partials/variables";
+@import "../partials/mixins";
+#addSticky {
+	z-index: 1001;
+	left: 51%;
+	background: #EFF2B9;
+	z-index: 1000;
+	margin: -50px -90px;
+}
+.chSticky { 
+
+	padding: 8px 26px 8px 14px;
+	position: absolute;
+	top: 30%;
+	left: 51%;
+	background: #EFF2B9;
+	z-index: 1000;
+	margin: 0;
+	
+	input,textarea {
+		padding: 10px;
+		background: #fefff0;
+		border: 1px solid #dce09d; 
+	}
+	
+	h2 {
+		font-size: 1.5em;
+		cursor: default;
+	}
+	
+	a.save, a.saveEdit {
+		display: block;
+		width: 100%;
+		background: #439dc0;
+		font-size: 1.2em;
+		color: white;
+		font-weight: bold;
+		padding: 10px 20px;
+		margin: 10px 0 -18px -14px;
+		text-align: center;
+		text-decoration: none;
+	}
+	
+	a.cancel, a.closeEdit, a.deleteSticky {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	
+	label {
+		width: 100%;
+		font-weight: initial;
+		text-align: left;
+		padding: initial;
+	}
+	
+}
+
+.chStickyFinal {
+	cursor: default;
+}
+
+#colorSelect {
+	margin: 10px;
+	
+	span {
+		padding-top: 2px;
+		width: 15px;
+		height: 13px;
+		float: left;
+		margin: 7px;
+		display: block;
+		text-align: center;
+		font-weight: bold;
+	}
+}
+
+span.default {	
+	background: #EFF2B9;
+	border: #b1b1b1 1px solid;
+}
+
+span.red {	
+	background: #f75151;
+}
+
+span.green {	
+	background: #b4d877;
+}
+
+span.purple {	
+	background: #e580ad;
+}
+
